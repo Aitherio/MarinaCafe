@@ -5,52 +5,70 @@
         <title>Marina Cafe - Menu</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="Style/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="Style/marinacafe.css"/>
     </head>
     <body>
         <div class="container-fluid">
-            <header>
-                <div class="jumbotron">
-                  <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
-                  <p><a href="index.html"><img src="Images/banner.png" alt="Marina Cafe"></a></p>
-                </div>
-                <nav class="navbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="jobs.html">Jobs</a></li>
-                        <li class="active"><a href="menu.html">Menu</a></li>
-                        <li><a href="performances.html">Performances</a></li>
-                    </ul>
-                </nav>
+            <header class="jumbotron">
+              <h1>Marina Café</h1>
+              <!-- <a href="index.html"><img src="Images/logo.png" alt="logo"></a> -->
+              <!-- <p><a href="index.html"><img src="Images/banner.png" alt="Marina Cafe"></a></p> -->
             </header>
-            <div id="menu">
-                <h1>Coffee King</h1>
-                <p>Palace blend, decaf or flavored.</p>
-                <p>Endless cup: $3.00</p>
-
-                <h1>Cafe Latte</h1>
-                <p>Coffee King infused into steamed milk</p>
-                <p>Single $3.00 Double $4.00</p>
-
-                <h1>Espresso Americano</h1>
-                <p>Straight shot of dark-roasted espresso.</p>
-                <p>$2.50</p>
-
-                <h1>Iced Cappuccino</h1>
-                <p>Sweet espresso blended with cold milk.</p>
-                <p>$3.75</p>
+            <div class="container-fluid">
+                <nav class="navbar navbar-inverse">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Marina Cafe</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="performances.html">Performances</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <footer>
-                667 Lawrence Ave.  Kelowna, BC V1Y6L8
-                <br>
-                <a href="tel:1-888-888-8888">1-888-888-8888</a>
-                <br>
-                <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
-                <br>
-                Copyright &copy; 2011 Marina Cafe
-                <br>
-            </footer>
+            <div id="menu">
+                <div id="item1">
+                    <h1>Coffee King</h1>
+                    <p>Palace blend, decaf or flavored.</p>
+                    <p>Endless cup: $3.00</p>
+                </div>
+                <div id="item2">
+                    <h1>Cafe Latte</h1>
+                    <p>Coffee King infused into steamed milk</p>
+                    <p>Single $3.00 Double $4.00</p>
+                </div>
+                <div id="item3">
+                    <h1>Espresso Americano</h1>
+                    <p>Straight shot of dark-roasted espresso.</p>
+                    <p>$2.50</p>
+                <div id="item4">
+                    <h1>Iced Cappuccino</h1>
+                    <p>Sweet espresso blended with cold milk.</p>
+                    <p>$3.75</p>
+                </div>
+            </div>
+            <div class="container-fluid bg-primary">
+                <footer>
+                    667 Lawrence Ave.  Kelowna, BC V1Y6L8
+                    <br>
+                    <a href="tel:1-888-888-8888">1-888-888-8888</a>
+                    <br>
+                    <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
+                    <br>
+                    Copyright &copy; 2011 Marina Cafe
+                    <br>
+                </footer>
+            </div>
         </div>
     </body>
 </html>
