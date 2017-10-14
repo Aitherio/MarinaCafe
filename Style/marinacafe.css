@@ -9,14 +9,14 @@
 }
 
 form {
-    background-color:#eaeaea;
+    background-color:#333;
  }
 
 input, textarea {
     margin-top: 10px;
 }
 
-#Submit, #Reset {
+#submit, #reset {
     margin-top: 10px;
 }
 
