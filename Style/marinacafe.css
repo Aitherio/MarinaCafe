@@ -1,6 +1,11 @@
+#banner{
+    width: 95%;
+    height: 90%;
+}
+
 #Navlogo {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 
 form {
