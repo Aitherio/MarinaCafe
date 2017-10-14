@@ -42,68 +42,106 @@
             </div>
             <div class="container-fluid">
         	  <form>
-        			Name: <input type="text" name="name" id="name"/>
-        			<br />
-                    <br />
-        			E-mail: <input type="text" name="email" id="email"/>
-        			<br />
-                    <br />
-        			Phone: <input type="text" name="phone" id="phone"/>
-        			<br />
-                    <br />
-        			<div id="roles">
-                        <fieldset><legend>Please select the job roles you are interested in:</legend>
-            				<br />
-            				<input id="bar associate" type="checkbox" name="bar_associate"/>
-            				<label for="bar associate">Bar Associate</label>
-
-            				<br />
-            				<input id="server" type="checkbox" name="server"/>
-            				<label for="server">Server</label>
-
-            				<br />
-            				<input id="cleaning_maintenance" type="checkbox" name="cleaning_maintenance"/>
-            				<label for="cleaning_maintenance">Cleaning &amp; Maintenance</label>
-
-            				<br />
-            				<input id="manager" type="checkbox" name="manager"/>
-            				<label for="manager">Manager</label>
+                    <div id="Contact Information">
+                        <fieldset>
+                            <div class="h3 visible-md visible-lg">
+                                Contact Information
+                            </div>
+                            <div class="h4 visible-xs visible-sm">
+                                Contact Information
+                            </div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name"/>
+                			<br />
+                			<label for="email">Email:</label>
+                            <input type="text" name="email" id="email"/>
+                			<br />
+                            <label for="phone">Phone:</label>
+                			<input type="text" name="phone" id="phone"/>
+                			<br />
                         </fieldset>
-        				<br />
+                    </div>
+        			<div id="roles">
+                        <fieldset>
+                            <div class="h3 visible-md visible-lg">
+                                Please select the job roles you are interested in:
+                            </div>
+                            <div class="h4 visible-xs visible-sm">
+                                Please select the job roles you are interested in:
+                            </div>
+                            <label for="bar_associate">&nbsp;Bar Associate</label>
+            				<input id="bar_associate" type="checkbox" name="bar_associate"/>
+            				<br />
+            				<label for="server">&nbsp;Server</label>
+            				<input id="server" type="checkbox" name="server"/>
+            				<br />
+                            <label for="cleaning_maintenance">&nbsp;Cleaning &amp; Maintenance</label>
+                            <input id="cleaning_maintenance" type="checkbox" name="cleaning_maintenance"/>
+            				<br />
+            				<label for="manager">&nbsp;Manager</label>
+            				<input id="manager" type="checkbox" name="manager"/>
+                        </fieldset>
                         <br />
         			</div>
         			<div id="Employment Type">
-        				Employment Type:
-                        <br />
-        				<input id="part time" type="radio" name="employment_type" value="Part Time"/>
-        				<label for="part time">Part Time</label>
-        				<input id="full time" type="radio" name="employment_type" value="Full Time"/>
-        				<label for="full time">Full Time</label>
-                        <br />
+        				<fieldset>
+                            <div class="h3 visible-md visible-lg">
+                                Employment Type:
+                            </div>
+                            <div class="h4 visible-xs visible-sm">
+                                Employment Type:
+                            </div>
+            				<label for="part time">&nbsp;Part Time</label>
+            				<input id="parttime" type="radio" name="employment_type" value="Part Time"/>
+                            <br />
+                        	<label for="full time">&nbsp;Full Time</label>
+            				<input id="fulltime" type="radio" name="employment_type" value="Full Time"/>
+                        </fieldset>
                         <br />
         			</div>
         			<div id="Gender">
-        				Gender:
-        				<br />
-        				<input id="male" type="radio" name="gender" value="Male"/>
-        				<label for="male">Male</label>
-        				<input id="female" type="radio" name="gender" value="Female"/>
-        				<label for="female">Female</label>
-                        <br />
+        				<fieldset>
+                            <div class="h3 visible-md visible-lg">
+                                Gender:
+                            </div>
+                            <div class="h4 visible-xs visible-sm">
+                                Gender
+                            </div>
+                            <label for="male">&nbsp;Male</label>
+            				<input id="male" type="radio" name="gender" value="Male"/>
+                            <br />
+            				<label for="female">&nbsp;Female</label>
+            				<input id="female" type="radio" name="gender" value="Female"/>
+                        </fieldset>
                         <br />
         			</div>
-        			<div id="Experience">Years of experience:
-        			    <select id="years_of_experience" name="years_of_experience" size="1">
-        			        <option value="0">Pick One</option>
-        		            <option value="No Experience">No Experience</option>
-        		            <option value="Less than one year">Less than one year</option>
-        			        <option value="More than one year">More than one year</option>
-        			    </select>
+        			<div id="Experience">
+                        <fieldset>
+                            <div class="h3 visible-md visible-lg">
+                                Years of Experience:
+                            </div>
+                            <div class="h4 visible-xs visible-sm">
+                                Years of Experience:
+                            </div>
+            			    <select id="years_of_experience" name="years_of_experience" size="1">
+            			        <option value="0">Pick One</option>
+            		            <option value="No Experience">No Experience</option>
+            		            <option value="Less than one year">Less than one year</option>
+            			        <option value="More than one year">More than one year</option>
+            			    </select>
+                        </fieldset>
+                        <br />
                     </div>
                     <div>
-                        Comments:
-                        <br />
-        			    <textarea id="comments"rows="4" cols="45"></textarea>
+                        <fieldset>
+                            <div class="h3 visible-md visible-lg">
+                                Comments:
+                            </div>
+                            <div class="h4 visible-xs visible-sm">
+                                Comments:
+                            </div>
+        			    <textarea id="comments" rows="4" cols="45"></textarea>
+                        </fieldset>
                     </div>
                     <div>
             			<button id="Submit" value="Submit">Submit</button>
