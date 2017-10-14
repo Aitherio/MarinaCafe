@@ -1,10 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Page Title Goes Here</title>
-    <meta charset="utf-8">
-</head>
-<body>
-    <div>... body text and more HTML tags go here ...</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Marina Cafe - Jobs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Style/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" type="text/css" href="Style/marinacafe.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <header class="jumbotron">
+                    <div class="hidden-xs">
+                        <h1>Marina Café</h1>
+                        <!-- <p><a href="index.html"><img src="Images/banner.png" alt="Marina Cafe"></a></p> -->
+                    </div>
+                    <div class="visible-xs text-center">
+                        <a href="index.html"><img id="Navlogo" src="Images/MarinaCafeLogoClear.png" alt="logo"></a>
+                    </div>
+                </header>
+            </div>
+            <div class="container-fluid">
+                <nav class="navbar navbar-inverse">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="index.html">Marina Cafe</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="jobs.html">Jobs</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="performances.html">Performances</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container-fluid">
+        	  <form>
+        			Name: <input type="text" name="name" id="name"/>
+        			<br />
+                    <br />
+        			E-mail: <input type="text" name="email" id="email"/>
+        			<br />
+                    <br />
+        			Phone: <input type="text" name="phone" id="phone"/>
+        			<br />
+                    <br />
+        			<div id="roles">
+                        <fieldset><legend>Please select the job roles you are interested in:</legend>
+            				<br />
+            				<input id="bar associate" type="checkbox" name="bar_associate"/>
+            				<label for="bar associate">Bar Associate</label>
+
+            				<br />
+            				<input id="server" type="checkbox" name="server"/>
+            				<label for="server">Server</label>
+
+            				<br />
+            				<input id="cleaning_maintenance" type="checkbox" name="cleaning_maintenance"/>
+            				<label for="cleaning_maintenance">Cleaning &amp; Maintenance</label>
+
+            				<br />
+            				<input id="manager" type="checkbox" name="manager"/>
+            				<label for="manager">Manager</label>
+                        </fieldset>
+        				<br />
+                        <br />
+        			</div>
+        			<div id="Employment Type">
+        				Employment Type:
+                        <br />
+        				<input id="part time" type="radio" name="employment_type" value="Part Time"/>
+        				<label for="part time">Part Time</label>
+        				<input id="full time" type="radio" name="employment_type" value="Full Time"/>
+        				<label for="full time">Full Time</label>
+                        <br />
+                        <br />
+        			</div>
+        			<div id="Gender">
+        				Gender:
+        				<br />
+        				<input id="male" type="radio" name="gender" value="Male"/>
+        				<label for="male">Male</label>
+        				<input id="female" type="radio" name="gender" value="Female"/>
+        				<label for="female">Female</label>
+                        <br />
+                        <br />
+        			</div>
+        			<div id="Experience">Years of experience:
+        			    <select id="years_of_experience" name="years_of_experience" size="1">
+        			        <option value="0">Pick One</option>
+        		            <option value="No Experience">No Experience</option>
+        		            <option value="Less than one year">Less than one year</option>
+        			        <option value="More than one year">More than one year</option>
+        			    </select>
+                    </div>
+                    <div>
+                        Comments:
+                        <br />
+        			    <textarea id="comments"rows="4" cols="45"></textarea>
+                    </div>
+                    <div>
+            			<button id="Submit" value="Submit">Submit</button>
+            			<button id="Reset" value="Reset">Reset</button>
+                    </div>
+        		</form>
+                <br />
+        	</div>
+            <div class="container-fluid bg-primary text-center">
+                <footer>
+                    667 Lawrence Ave.  Kelowna, BC V1Y6L8
+                    <br />
+                    <a href="tel:1-888-888-8888">1-888-888-8888</a>
+                    <br />
+                    <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
+                    <br />
+                    Copyright &copy; 2011 Marina Cafe
+                    <br />
+                </footer>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 </html>
