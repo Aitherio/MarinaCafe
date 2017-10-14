@@ -21,7 +21,7 @@
                 </header>
             </div>
             <div class="container-fluid">
-                <nav class="navbar navbar-inverse">
+                <nav class="navbar navbar-inverse container-fluid">
                     <div class="navbar-header">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
                         <span class="icon-bar"></span>
@@ -42,126 +42,121 @@
             </div>
             <div class="container-fluid">
         	  <form>
-                    <div id="Contact Information">
-                        <fieldset>
-                            <div class="h3 visible-md visible-lg">
-                                Contact Information
-                            </div>
-                            <div class="h4 visible-xs visible-sm">
-                                Contact Information
-                            </div>
-                            <label for="name">Name:</label>
-                            <input type="text" name="name" id="name"/>
-                			<br />
-                			<label for="email">Email:</label>
-                            <input type="text" name="email" id="email"/>
-                			<br />
-                            <label for="phone">Phone:</label>
-                			<input type="text" name="phone" id="phone"/>
-                			<br />
-                        </fieldset>
-                    </div>
-        			<div id="roles">
-                        <fieldset>
-                            <div class="h3 visible-md visible-lg">
-                                Please select the job roles you are interested in:
-                            </div>
-                            <div class="h4 visible-xs visible-sm">
-                                Please select the job roles you are interested in:
-                            </div>
-                            <label for="bar_associate">&nbsp;Bar Associate</label>
-            				<input id="bar_associate" type="checkbox" name="bar_associate"/>
-            				<br />
-            				<label for="server">&nbsp;Server</label>
-            				<input id="server" type="checkbox" name="server"/>
-            				<br />
-                            <label for="cleaning_maintenance">&nbsp;Cleaning &amp; Maintenance</label>
-                            <input id="cleaning_maintenance" type="checkbox" name="cleaning_maintenance"/>
-            				<br />
-            				<label for="manager">&nbsp;Manager</label>
-            				<input id="manager" type="checkbox" name="manager"/>
-                        </fieldset>
-                        <br />
-        			</div>
-        			<div id="Employment Type">
-        				<fieldset>
-                            <div class="h3 visible-md visible-lg">
-                                Employment Type:
-                            </div>
-                            <div class="h4 visible-xs visible-sm">
-                                Employment Type:
-                            </div>
-            				<label for="part time">&nbsp;Part Time</label>
-            				<input id="parttime" type="radio" name="employment_type" value="Part Time"/>
+                    <fieldset id="Contact Information">
+                        <div class="h3 visible-md visible-lg">
+                            Contact Information
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Contact Information
+                        </div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name"/>
+            			<br />
+            			<label for="email">Email:</label>
+                        <input type="text" name="email" id="email"/>
+            			<br />
+                        <label for="phone">Phone:</label>
+            			<input type="text" name="phone" id="phone"/>
+            			<br />
+                    </fieldset>
+        			<fieldset id="roles">
+                        <div class="h3 visible-md visible-lg">
+                            Please select the job roles you are interested in:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Please select the job roles you are interested in:
+                        </div>
+                        <label for="bar_associate">&nbsp;Bar Associate</label>
+        				<input id="bar_associate" type="checkbox" name="bar_associate"/>
+        				<br />
+        				<label for="server">&nbsp;Server</label>
+        				<input id="server" type="checkbox" name="server"/>
+        				<br />
+
+                        <input id="cleaning_maintenance" type="checkbox" name="cleaning_maintenance"/>
+                        <div class="hidden-xs">
+                            <label for="cleaning_maintenance">
+                                &nbsp;Cleaning &amp; Maintenance
+                            </label>
                             <br />
-                        	<label for="full time">&nbsp;Full Time</label>
-            				<input id="fulltime" type="radio" name="employment_type" value="Full Time"/>
-                        </fieldset>
+                        </div>
+                        <div class="visible-xs">
+                            <label for="cleaning_maintenance">&nbsp;Cleaning
+                                <br />
+                                &amp; Maintenance
+                            </label>
+                        </div>
+        				<label for="manager">&nbsp;Manager</label>
+        				<input id="manager" type="checkbox" name="manager"/>
+                    </fieldset>
+        			<fieldset id="Employment Type">
+                        <div class="h3 visible-md visible-lg">
+                            Employment Type:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Employment Type:
+                        </div>
+        				<label for="part time">&nbsp;Part Time</label>
+        				<input id="parttime" type="radio" name="employment_type" value="Part Time"/>
                         <br />
-        			</div>
-        			<div id="Gender">
-        				<fieldset>
-                            <div class="h3 visible-md visible-lg">
-                                Gender:
-                            </div>
-                            <div class="h4 visible-xs visible-sm">
-                                Gender
-                            </div>
-                            <label for="male">&nbsp;Male</label>
-            				<input id="male" type="radio" name="gender" value="Male"/>
-                            <br />
-            				<label for="female">&nbsp;Female</label>
-            				<input id="female" type="radio" name="gender" value="Female"/>
-                        </fieldset>
+                    	<label for="full time">&nbsp;Full Time</label>
+        				<input id="fulltime" type="radio" name="employment_type" value="Full Time"/>
+                    </fieldset>
+        			<fieldset id="Gender">
+                        <div class="h3 visible-md visible-lg">
+                            Gender:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Gender
+                        </div>
+                        <label for="male">&nbsp;Male</label>
+        				<input id="male" type="radio" name="gender" value="Male"/>
                         <br />
-        			</div>
-        			<div id="Experience">
-                        <fieldset>
-                            <div class="h3 visible-md visible-lg">
-                                Years of Experience:
-                            </div>
-                            <div class="h4 visible-xs visible-sm">
-                                Years of Experience:
-                            </div>
-            			    <select id="years_of_experience" name="years_of_experience" size="1">
-            			        <option value="0">Pick One</option>
-            		            <option value="No Experience">No Experience</option>
-            		            <option value="Less than one year">Less than one year</option>
-            			        <option value="More than one year">More than one year</option>
-            			    </select>
-                        </fieldset>
-                        <br />
-                    </div>
-                    <div>
-                        <fieldset>
-                            <div class="h3 visible-md visible-lg">
-                                Comments:
-                            </div>
-                            <div class="h4 visible-xs visible-sm">
-                                Comments:
-                            </div>
-        			    <textarea id="comments" rows="4" cols="45"></textarea>
-                        </fieldset>
-                    </div>
-                    <div>
+        				<label for="female">&nbsp;Female</label>
+        				<input id="female" type="radio" name="gender" value="Female"/>
+                    </fieldset>
+        			<fieldset id="Experience">
+                        <div class="h3 visible-md visible-lg">
+                            Years of Experience:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Years of Experience:
+                        </div>
+        			    <select id="years_of_experience" name="years_of_experience" size="1">
+        			        <option value="0">Pick One</option>
+        		            <option value="No Experience">No Experience</option>
+        		            <option value="Less than one year">Less than one year</option>
+        			        <option value="More than one year">More than one year</option>
+        			    </select>
+                    </fieldset>
+                    <fieldset>
+                        <div class="h3 visible-md visible-lg">
+                            Comments:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Comments:
+                        </div>
+    			    <textarea class="visible-md visible-lg" id="comments" rows="4" cols="55"></textarea>
+                    <textarea class="visible-sm" id="comments" rows="4" cols="40"></textarea>
+                    <textarea class="visible-xs" id="comments" rows="7" cols="15"></textarea>
+                    </fieldset>
+                    <fieldset>
             			<button id="Submit" value="Submit">Submit</button>
             			<button id="Reset" value="Reset">Reset</button>
-                    </div>
+                    </fieldset>
         		</form>
                 <br />
         	</div>
-            <div class="container-fluid bg-primary text-center">
-                <footer>
-                    667 Lawrence Ave.  Kelowna, BC V1Y6L8
-                    <br />
-                    <a href="tel:1-888-888-8888">1-888-888-8888</a>
-                    <br />
-                    <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
-                    <br />
-                    Copyright &copy; 2011 Marina Cafe
-                    <br />
-                </footer>
-            </div>
+            <footer class="container-fluid bg-primary text-center">
+                667 Lawrence Ave.  Kelowna, BC V1Y6L8
+                <br />
+                <a href="tel:1-888-888-8888">1-888-888-8888</a>
+                <br />
+                <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
+                <br />
+                Copyright &copy; 2011 Marina Cafe
+                <br />
+            </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
