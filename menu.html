@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Page Title Goes Here</title>
-    <meta charset="utf-8">
-</head>
-<body>
-    <div>... body text and more HTML tags go here ...</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Marina Cafe - Menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Style/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" type="text/css" href="Style/marinacafe.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="container-fluid">
+                <div class="hidden-xs text-center">
+                    <p><a href="index.html"><img id="banner" src="Images/banner.png" alt="Marina Cafe"></a></p>
+                </div>
+                <div class="visible-xs text-center">
+                    <a href="index.html"><img id="Navlogo" src="Images/Logo.png" alt="logo"></a>
+                </div>
+            </header>
+            <nav class="navbar navbar-inverse container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Marina Cafe</a>
+                </div>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li class="active"><a href="menu.html">Menu</a></li>
+                        <li><a href="performances.html">Performances</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid" id="menu">
+                <img class="hidden-sm hidden-xs text-center" id="ManyCoffees" src="Images/ManyCoffees.png" alt="Many kinds of coffee">
+                <!--Photo by Nathan Dumlao on Unsplash-->
+                <div class="col-sm-12">
+                    <div class="col-sm-6 text-center" id="item1">
+                        <h4>Coffee King</h4>
+                        <p>Palace blend, decaf or flavored.</p>
+                        <p>Endless cup: $3.00</p>
+                        <hr />
+                    </div>
+                    <div class="col-sm-6 text-center" id="item2">
+                        <h4>Cafe Latte</h4>
+                        <p>Coffee King infused into steamed milk</p>
+                        <p>Single $3.00 Double $4.00</p>
+                        <hr />
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-6 text-center" id="item3">
+                        <h4>Espresso Americano</h4>
+                        <p>Straight shot of dark-roasted espresso.</p>
+                        <p>$2.50</p>
+                        <div class="visible-xs">
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-center" id="item4">
+                        <h4>Iced Cappuccino</h4>
+                        <p>Sweet espresso blended with cold milk.</p>
+                        <p>$3.75</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <footer class="container-fluid bg-primary text-center">
+                667 Lawrence Ave.  Kelowna, BC V1Y6L8
+                <br />
+                <a href="tel:1-888-888-8888">1-888-888-8888</a>
+                <br />
+                <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
+                <br />
+                Copyright &copy; 2011 Marina Cafe
+                <br />
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 </html>

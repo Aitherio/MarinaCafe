@@ -1,10 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Page Title Goes Here</title>
-    <meta charset="utf-8">
-</head>
-<body>
-    <div>... body text and more HTML tags go here ...</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Marina Cafe - Jobs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Style/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" type="text/css" href="Style/marinacafe.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="container-fluid">
+                <div class="hidden-xs text-center">
+                    <p><a href="index.html"><img id="banner" src="Images/banner.png" alt="Marina Cafe"></a></p>
+                </div>
+                <div class="visible-xs text-center">
+                    <a href="index.html"><img id="Navlogo" src="Images/Logo.png" alt="logo"></a>
+                </div>
+            </header>
+            <nav class="navbar navbar-inverse container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Marina Cafe</a>
+                </div>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="jobs.html">Jobs</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="performances.html">Performances</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="h3 text-center">
+                    Join our team!
+                </div>
+                <div class="container-fluid">
+                    <p>
+                        Are you a college student who would like a part time job? Apply at Marina Cafe - we will work around your school schedule.
+                        Complete the information form below to get the application process started.
+                        Or, if you prefer, stop by Marina Cafe any time and ask about employment opportunities.
+                        Marina cafe is an equal opportunity employer.
+                        We celebrate the diversity of our associates!
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-1">
+                </div>
+                <form name="JoinUs" class="col-md-6 col-xs-10" action="job_applications.php" method="post">
+                    <fieldset id="ContactInformation">
+                        <div class="h3 visible-md visible-lg">
+                            Contact Information
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Contact Information
+                        </div>
+                        <label for="name">Name:&nbsp;</label>
+                        <input type="text" name="name" id="name"/>
+            			<br />
+            			<label for="email">Email:&nbsp;&nbsp;</label>
+                        <input type="email" name="email" id="email"/>
+            			<br />
+                        <label for="phone">Phone:</label>
+            			<input type="tel" name="phone" id="phone"/>
+            			<hr />
+                    </fieldset>
+        			<fieldset id="roles">
+                        <div class="h3 visible-md visible-lg">
+                            Please select the job roles you are interested in:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Please select the job roles you are interested in:
+                        </div>
+                        <label for="bar_associate">&nbsp;Bar Associate</label>
+        				<input id="bar_associate" type="checkbox" name="bar_associate"/>
+        				<br />
+        				<label for="server">&nbsp;Server</label>
+        				<input id="server" type="checkbox" name="server"/>
+        				<br />
+                        <input id="cleaning_maintenance" type="checkbox" name="cleaning_maintenance"/>
+                        <div class="hidden-xs">
+                            <label for="cleaning_maintenance">
+                                &nbsp;Cleaning &amp; Maintenance
+                            </label>
+                            <br />
+                        </div>
+                        <div class="visible-xs">
+                            <label for="cleaning_maintenance">&nbsp;Cleaning
+                                <br />
+                                &amp; Maintenance
+                            </label>
+                        </div>
+        				<label for="manager">&nbsp;Manager</label>
+        				<input id="manager" type="checkbox" name="manager"/>
+                        <hr />
+                    </fieldset>
+        			<fieldset id="EmploymentType">
+                        <div class="h3 visible-md visible-lg">
+                            Employment Type:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Employment Type:
+                        </div>
+        				<label for="parttime">&nbsp;Part Time</label>
+        				<input id="parttime" type="radio" name="employment_type" value="Part Time"/>
+                        <br />
+                    	<label for="fulltime">&nbsp;Full Time</label>
+        				<input id="fulltime" type="radio" name="employment_type" value="Full Time"/>
+                        <hr />
+                    </fieldset>
+        			<fieldset id="Gender">
+                        <div class="h3 visible-md visible-lg">
+                            Gender:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Gender:
+                        </div>
+                        <label for="male">&nbsp;Male</label>
+        				<input id="male" type="radio" name="gender" value="Male"/>
+                        <br />
+        				<label for="female">&nbsp;Female</label>
+        				<input id="female" type="radio" name="gender" value="Female"/>
+                        <hr />
+                    </fieldset>
+        			<fieldset id="Experience">
+                        <div class="h3 visible-md visible-lg">
+                            Years of Experience:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Years of Experience:
+                        </div>
+        			    <select class="bg-info" id="years_of_experience" name="years_of_experience" size="1">
+        			        <option value="0">Pick One</option>
+        		            <option value="No Experience">No Experience</option>
+        		            <option value="Less than one year">Less than one year</option>
+        			        <option value="More than one year">More than one year</option>
+        			    </select>
+                        <hr />
+                    </fieldset>
+                    <fieldset>
+                        <div class="h3 visible-md visible-lg">
+                            Comments:
+                        </div>
+                        <div class="h4 visible-xs visible-sm">
+                            Comments:
+                        </div>
+    			    <textarea class="visible-md visible-lg" id="medcomments" rows="4" cols="55"></textarea>
+                    <textarea class="visible-sm" id="smallcomments" rows="4" cols="40"></textarea>
+                    <textarea class="visible-xs" id="xscomments" rows="7" cols="15"></textarea>
+                    </fieldset>
+                    <fieldset>
+            			<button class="bg-success" id="submit" type="submit">Submit</button>
+            			<button class="bg-info" id="reset" type="reset">Reset</button>
+                    </fieldset>
+        		</form>
+        	</div>
+            <br />
+            <footer class="container-fluid bg-primary text-center">
+                667 Lawrence Ave.  Kelowna, BC V1Y6L8
+                <br />
+                <a href="tel:1-888-888-8888">1-888-888-8888</a>
+                <br />
+                <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
+                <br />
+                Copyright &copy; 2011 Marina Cafe
+                <br />
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 </html>

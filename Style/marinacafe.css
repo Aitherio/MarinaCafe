@@ -1,7 +1,46 @@
-html{
-
+#banner{
+    width: 90%;
+    height: 90%;
 }
 
-body {
+#Navlogo {
+    width: 125px;
+    height: 125px;
+}
 
+#HomePicture{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color:#333;
+ }
+
+input, textarea {
+    margin-top: 10px;
+}
+
+#submit, #reset {
+    margin-top: 10px;
+}
+
+#bar_associate, #server,
+#cleaning_maintenance, #manager,
+#parttime, #fulltime,
+#male, #female{
+    float: left;
+}
+
+#ManyCoffees{
+    margin-left:10%;
+    width: 80%;
+    height: 80%;
+}
+
+.performer{
+    padding: 10%;
+    width: 80%;
+    height: 80%;
 }

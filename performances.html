@@ -1,10 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Page Title Goes Here</title>
-    <meta charset="utf-8">
-</head>
-<body>
-    <div>... body text and more HTML tags go here ...</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Marina Cafe - Performances</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Style/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" type="text/css" href="Style/marinacafe.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="container-fluid">
+                <div class="hidden-xs text-center">
+                    <p><a href="index.html"><img id="banner" src="Images/banner.png" alt="Marina Cafe"></a></p>
+                </div>
+                <div class="visible-xs text-center">
+                    <a href="index.html"><img id="Navlogo" src="Images/Logo.png" alt="logo"></a>
+                </div>
+            </header>
+            <nav class="navbar navbar-inverse container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Marina Cafe</a>
+                </div>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li class="active"><a href="performances.html">Performances</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="h3 hidden-sm hidden-xs text-center">
+                    Special performances are held every Thursday night from 7:30pm to 9:30pm.
+                </div>
+                <div class="h4 visible-sm text-center">
+                    Special performances are held every Thursday night from 7:30pm to 9:30pm.
+                </div>
+                <div class="h5 visible-xs text-center">
+                    Special performances are held every Thursday night from 7:30pm to 9:30pm.
+                </div>
+                <div class="col-sm-4" id="November">
+                    <div class="h3 hidden-xs">
+                        November 2011
+                    </div>
+                    <div class="h4 visible-xs">
+                        <hr />
+                        November 2011
+                    </div>
+                    <img class="performer hidden-xs" id="JTGray" src="Images/JTGray.jpg" alt="J.T. Gray">
+                    <aside>J.T. Gray will be back ot entertain us with his unique folk music.</aside>
+                </div>
+                <div class="col-sm-4" id="December">
+                    <div class="h3 hidden-xs">
+                        December 2011
+                    </div>
+                    <div class="h4 visible-xs">
+                        <hr />
+                        December 2011
+                    </div>
+                    <img class="performer hidden-xs" id="BryanArrowwood" src="Images/BryanArrowwood.jpg" alt="Bryan Arrowwood">
+                    <aside>Bryan Arrowwood will sooth your soul with his violin music!</aside>
+                </div>
+                <div class="col-sm-4" id="March">
+                    <div class="h3 hidden-xs">
+                        March
+                    </div>
+                    <div class="h4 visible-xs">
+                        <hr />
+                        March
+                    </div>
+                    <img class="performer hidden-xs" id="Karaoke" src="Images/Logo_Larger.png" alt="Karaoke Night!">
+                    <aside>Karaoke Night!</aside>
+                </div>
+            </div>
+            <footer class="container-fluid bg-primary text-center">
+                667 Lawrence Ave.  Kelowna, BC V1Y6L8
+                <br />
+                <a href="tel:1-888-888-8888">1-888-888-8888</a>
+                <br />
+                <a href='m&#97;i&#108;&#116;o&#58;&#109;ari%6&#69;a%40marin%6&#49;%63&#97;%6&#54;&#37;65&#46;co&#109;'>marina@marinacafe.com</a>
+                <br />
+                Copyright &copy; 2011 Marina Cafe
+                <br />
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 </html>
