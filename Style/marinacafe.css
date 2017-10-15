@@ -8,6 +8,12 @@
     height: 125px;
 }
 
+#HomePicture{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
 form {
     background-color:#333;
  }
