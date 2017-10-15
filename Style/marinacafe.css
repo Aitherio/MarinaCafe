@@ -27,6 +27,12 @@ input, textarea {
     float: left;
 }
 
+#ManyCoffees{
+    margin-left:10%;
+    width: 80%;
+    height: 80%;
+}
+
 .performer{
     padding: 10%;
     width: 80%;
